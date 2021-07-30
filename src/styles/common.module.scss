@@ -1,1 +1,26 @@
-// TODO
+.container {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.loadingText {
+  font-size: 2rem;
+  font-weight: 600
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  color: var(--gray-200);
+
+  svg {
+    margin-right: 0.25rem;
+  }
+}
+
+.tagsContainer {
+  display: flex;
+  align-items: center;
+  gap: 1.625rem;
+}

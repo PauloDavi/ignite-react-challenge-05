@@ -1,1 +1,48 @@
-// TODO
+.postsContainer {
+  margin: 3rem 0;
+
+  a {
+    display: flex;
+    flex-direction: column;
+
+    &:hover strong {
+      border-color: var(--gray-50);
+    }
+
+    strong {
+      margin-right: auto;
+      color: var(--gray-50);
+      font-size: 2rem;
+
+      transition: border-color 0.2s;
+      border-bottom: 3px solid transparent;
+    }
+
+    > span {
+      color: var(--gray-300);
+      margin-top: 0.5rem;
+    }
+
+    > div{
+      margin-top: 1.5rem;
+    }
+
+    & + a {
+      margin-top: 3rem;
+    }
+  }
+
+  > button {
+    margin-top: 3rem;
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: var(--pink-500);
+
+    transition: border-color 0.2s;
+    border-bottom: 2px solid transparent;
+
+    &:hover {
+      border-color: var(--pink-500);
+    }
+  }
+}
